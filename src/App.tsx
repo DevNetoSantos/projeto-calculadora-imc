@@ -9,6 +9,14 @@ const App = () => {
           <img src={imageLogo} alt="logo do site" width={150}/>
         </div>
       </header>
+      <div className={style.container}>
+        <div className={style.leftSide}>
+          ...
+        </div>
+        <div className={style.rigthSide}>
+          ...
+        </div>
+      </div>
     </div>
   );
 }
