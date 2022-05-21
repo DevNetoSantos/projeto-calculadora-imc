@@ -59,8 +59,15 @@
 
 .container .leftSide button:hover {
     opacity: .6;
-}
-.rigthSide {
+} 
+.container .rigthSide {
     flex: 1;
     margin-left: 40px;
+    display: flex;
+}
+
+.container .rigthSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
