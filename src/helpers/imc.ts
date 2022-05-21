@@ -2,7 +2,8 @@ export type level = {
     title: string;
     color: string;
     icon: 'down' | 'up';
-    imc: number[]
+    imc: number[];
+    yourImc?: number;
 }
 
 export const levels = [
@@ -13,5 +14,14 @@ export const levels = [
 ];
 
 export const calImc = (height: number, weight: number) => {
+    const imc = weight / (height * height);
 
+    for(let i in levels) {
+        if(imc >= levels[i].imc[0] && imc < levels[i].imc[1]) {
+            return levels[1];
+        }
+    }
+
+
+    return null;
 }
