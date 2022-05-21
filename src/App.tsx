@@ -1,17 +1,18 @@
 import style from './App.module.css';
 import imageLogo from './assets/images/powered.png';
 import { useState } from 'react';
-import { levels, calImc } from './helpers/imc';
+import { level, calImc, levels } from './helpers/imc';
 import { GridItem } from './components/GridItem';
 
 const App = () => {
 
   const [heightField, setHeightField] = useState<number>(0);
   const [weghtField, setWeightField] = useState<number>(0);
+  const [toShow, setToShow] = useState<level | null> (null);
 
   const buttonCalc = () => {
     if(heightField && weghtField) {
-
+      setToShow(calImc(heightField, weghtField));
     } else {
       alert('ERROR')
     }
@@ -48,11 +49,19 @@ const App = () => {
           <button onClick={buttonCalc}>Calcular</button>
         </div>
         <div className={style.rigthSide}>
-          <div className={style.grid}>
+          {!toShow &&
+             <div className={style.grid}>
             {levels.map((item, key) => (
-              <GridItem key={key} item={item}/>
+            <GridItem key={key} item={item}/>
             ))}
-          </div>
+        </div>
+          }
+          {toShow &&
+            <div className={style.rightBig}>
+              <div className={style.rightArray}></div>
+              <GridItem item={toShow}/>
+            </div>
+          }
         </div>
       </div>
     </div>
