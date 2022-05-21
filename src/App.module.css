@@ -15,6 +15,9 @@
     max-width: 900px;
     margin: auto;
 }
+.main {
+    padding-bottom: 50px;
+}
 
 .leftSide {
     flex: 1;
@@ -107,4 +110,45 @@
 
 .container .rigthSide .rightArray:hover {
     opacity: .6;
+}
+
+@media (max-width: 770px) {
+    header {
+        padding: 0 20px;
+    }
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .container .leftSide {
+        margin-right: 0;
+    }
+
+    .container .rigthSide {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .container .rigthSide .rightArray {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+
+    .container .leftSide h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container .rigthSide .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container .rigthSide .rightArray {
+        width: 50px;
+        height: 50px;
+        margin-left: 11px;
+        margin-top: 11px;
+    }
 }
