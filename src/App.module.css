@@ -21,6 +21,44 @@
     margin-right: 40px;
 }
 
+.container .leftSide h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #3A4B5C;
+}
+
+.container .leftSide p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #6A7D8B;
+}
+
+.container .leftSide input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgba(150, 165, 171, .5);
+    padding: 10px 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.container .leftSide button {
+    background-color: #227C9D;
+    color: #FFFFFF;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
+    transition: all ease 0.5s;
+}
+
+.container .leftSide button:hover {
+    opacity: .6;
+}
 .rigthSide {
     flex: 1;
     margin-left: 40px;
