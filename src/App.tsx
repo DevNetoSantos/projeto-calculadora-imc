@@ -19,12 +19,12 @@ const App = () => {
     <div className={style.main}>
       <header>
         <div className={style.headerContainer}>
-          <img src={imageLogo} alt="logo do site" width={150}/>
+          <img src={imageLogo} alt="logo do site" width={50}/>
         </div>
       </header>
       <div className={style.container}>
         <div className={style.leftSide}>
-          <h1>Calcule seu IMC</h1>
+          <h1>Calcule seu IMC.</h1>
           <p>
           O índice de massa corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.
           </p>
