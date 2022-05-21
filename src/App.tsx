@@ -1,5 +1,6 @@
 import style from './App.module.css';
 import imageLogo from './assets/images/powered.png';
+import leftArrowImage from './assets/images/leftarrow.png';
 import { useState } from 'react';
 import { level, calImc, levels } from './helpers/imc';
 import { GridItem } from './components/GridItem';
@@ -16,6 +17,12 @@ const App = () => {
     } else {
       alert('ERROR')
     }
+  }
+
+  const handBack = () => {
+    setToShow(null);
+    setHeightField(0);
+    setWeightField(0);
   }
 
   return(
@@ -58,7 +65,9 @@ const App = () => {
           }
           {toShow &&
             <div className={style.rightBig}>
-              <div className={style.rightArray}></div>
+              <div className={style.rightArray} onClick={handBack}>
+                <img src={leftArrowImage} alt="botão voltra" width={25} />
+              </div>
               <GridItem item={toShow}/>
             </div>
           }

@@ -81,3 +81,22 @@
     font-size: 17px;
     padding: 10px 0px 50px 0px;
 }
+
+.container .rigthSide .rightArray {
+    position: absolute;
+    background-color: #227C9D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 135px;
+    transition: all ease 0.3s;
+}
+
+.container .rigthSide .rightArray:hover {
+    opacity: .6;
+}
