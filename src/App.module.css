@@ -71,3 +71,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.container .rigthSide .rightBig {
+    flex: 1;
+    display: flex;
+}
+
+.yourImc {
+    font-size: 17px;
+    padding: 10px 0px 50px 0px;
+}
