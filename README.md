@@ -7,3 +7,7 @@ INSTALAR TEMPLATE REACT-TS.
 CSS MODULE.
 
 TODO RESPONSIVO.
+
+VÍDEO DO PROJETO.
+
+https://user-images.githubusercontent.com/89228679/169710545-5de6a7cf-fcd6-4326-9cb1-405cf750b560.mp4
